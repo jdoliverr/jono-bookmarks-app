@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Bookmarks App</title>
+    <link rel='stylesheet' href='index.css'>
+</head>
+<body>
+    <header>
+        <h1>My Bookmarks</h1>
+    </header>
+    <div class='add-rating-container'>
+        <form class='new-bookmark'>
+            <button class='new-bookmark-button'>Add Bookmark</button>
+        </form>
+        <form class='rating-select-form'>
+            <select class='rating-select'>
+                <option>Minimum Rating</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </form>
+    </div>
+    <div class='add-form-container'>
+        <form class='add-bookmark-form'>
+            <h2>New Bookmark</h2>
+            
+            <label for='bookmark-entry'>Title</label>
+            <input type='text' name='bookmark-entry' class='new-bookmark-title js-bookmark-entry' required>
+            
+            <label for='bookmark-entry'>Url</label>
+            <input type='url' name='bookmark-link' class='new-bookmark-url js-bookmark-entry' required>
+            
+            <label for='bookmark-entry'>Rating</label>
+            <input type='number' min='1' max='5' name='bookmark-rating' class='new-bookmark-rating js-bookmark-entry' required>
+            
+            <label for='bookmark-entry'>Description</label>
+            <input type='text' name='bookmark-description' class='new-bookmark-desription js-bookmark-entry' required>
+            
+            <button type='submit' class='add-bookmark-submit'>Add Bookmark</button>
+        </form>
+    </div>
+    <ul class='bookmark-container'>
+    </ul>
+    <script type='text/javascript' src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+    <script type='module' src='scripts/index.js'></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+.add-rating-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.bookmark-container {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.bookmark-list {
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.expand-bookmark-button {
+    text-align: left;
+    width: 100%;
+    height: 50px;
+}
+
+.add-bookmark-form {
+    text-align: center;
+    /* border: 1px solid black; */
+    margin: 20px;
+    padding: 10px;
+}
