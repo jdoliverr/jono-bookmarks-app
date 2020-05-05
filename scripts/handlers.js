@@ -111,6 +111,7 @@ function handleAddItemSubmit() {
             })
             .catch(err => {
                 store.setError(err.message);
+                alert(store.error);
                 render();
             });
     });
