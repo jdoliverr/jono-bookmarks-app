@@ -32,7 +32,8 @@ function createBookmark(title, url, rating, description) {
         title: title,
         url: url,
         rating: rating,
-        description: description
+        desc: description,
+        expanded: false
     };
     let newBookmarkString = JSON.stringify(newBookmark);
     return listApiFetch(`${baseUrl}/bookmarks`, {

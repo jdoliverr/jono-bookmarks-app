@@ -4,7 +4,6 @@ import handlers from './handlers.js';
 
 
 function main() {
-    console.log('main');
     api.getBookmarks()
     .then((bookmarks) => {
         bookmarks.forEach((bookmark) => store.addBookmark(bookmark));
