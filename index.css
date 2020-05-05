@@ -2,12 +2,16 @@
     box-sizing: border-box;
     background-color: rgb(34, 45, 66);
     color: white;
+    
 }
 
 h1 {
     text-align: center;
 }
 
+body {
+    font-size: 18px;
+}
 .add-rating-container {
     display: flex;
     justify-content: space-around;
@@ -35,10 +39,6 @@ option {
     font-weight: 700;
 }
 
-/* li, p,.rate-container, .bookmark-link {
-    background-color: white;
-    color: black;
-} */
 .bookmark-container {
     list-style: none;
     display: flex;

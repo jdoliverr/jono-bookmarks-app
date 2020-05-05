@@ -21,7 +21,7 @@ function generateBookmark(bookmark) {
                     <p>Rating: ${bookmark.rating}/5</p>
                     <p>
                         ${bookmark.desc} <br>
-                        <a href='${bookmark.url}' class='bookmark-link'>Visit Site</a>
+                        <a href='${bookmark.url}' class='bookmark-link' target='_blank'>Visit Site</a>
                     </p>
                 </div>
                 <button class='delete-button'>Remove</button>

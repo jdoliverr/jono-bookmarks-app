@@ -24,7 +24,7 @@ function listApiFetch(...args) {
 };
 
 function getBookmarks() {
-    return listApiFetch(`${baseUrl}/bookmarks`);
+    return listApiFetch(`${baseUrl}/bookmarks`)
 };
 // not sure how to handle multiple form inputs at once
 function createBookmark(title, url, rating, description) {
